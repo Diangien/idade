@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/geral.css" media="all">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 800px)">
 </head>
 <body>
     <main>
@@ -12,26 +13,35 @@
             <div class="inputs">
                 <div class="caixa">
                     <label for="txtDia">Dia</label>
-                    <input type="text" id="txtDia">
+                    <input type="number" id="txtDia" placeholder="DD" max="31">
                 </div>
 
                 <div class="caixa">
                     <label for="txtMes">Mês</label>
-                    <input type="text" id="txtMes">
+                    <input type="number" id="txtMes" placeholder="MM" max="31">
                 </div>
 
                 <div class="caixa">
                     <label for="txtAno">Ano</label>
-                    <input type="text" id="txtAno">
+                    <input type="number" id="txtAno" placeholder="AAAA" max="31">
                 </div>
             </div>
 
             <div class="botao-container">
-
+               <hr>
+                <img src="./assets/images/icon-arrow.svg" alt="seta" srcset="">
             </div>
 
             <div class="resultado">
-
+                <div id="anos" class="resp">
+                    <em><span id="ano">--</span> anos</em>
+                </div>
+                <div id="meses" class="resp">
+                    <em><span id="mes">--</span> meses</em>
+                </div>
+                <div id="dias" class="resp">
+                    <em><span id="dia">--</span> dias</em>
+                </div>
             </div>
         </div>
     </main>

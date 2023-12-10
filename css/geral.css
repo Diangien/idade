@@ -8,3 +8,43 @@
     src:url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
     font-family: 'Poppins';
 }
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh; 
+    background-color: hsl(0, 0%, 94%);
+}
+
+main{
+    
+    width: 50%;
+    background-color:hsl(0, 0%, 100%);
+    padding:20px;
+    border-radius:10px 10px 50px;
+    
+    
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.inputs{
+    display:flex;
+    gap:10%
+}
+
+.caixa{
+    display:flex;
+    flex-direction:column;
+
+}
+
+input[type=number]{
+    width: 3.5rem;
+    padding:5px;
+}
