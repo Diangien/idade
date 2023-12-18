@@ -47,8 +47,10 @@ input[type=number]{
     padding:5px;
 }
 
+/* Botao Action */
+
 .botao-container{
-    display:flex;
     width: 100%;
-    justify-content: center;
 }
+
+
