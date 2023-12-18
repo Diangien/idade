@@ -22,9 +22,7 @@ main{
     width: 50%;
     background-color:hsl(0, 0%, 100%);
     padding:20px;
-    border-radius:10px 10px 50px;
-    
-    
+    border-radius:10px 10px 50px; 
 }
 
 .conteudo{
@@ -47,4 +45,10 @@ main{
 input[type=number]{
     width: 3.5rem;
     padding:5px;
+}
+
+.botao-container{
+    display:flex;
+    width: 100%;
+    justify-content: center;
 }
