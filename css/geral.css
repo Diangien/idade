@@ -5,7 +5,8 @@
 }
 
 @font-face{
-    src:url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
+    src:url(../assets/fonts/Poppins-Regular.ttf) format('truetype'),
+    url(../assets/fonts/Poppins-BoldItalic.ttf) format('truetype');
     font-family: 'Poppins';
 }
 
@@ -33,7 +34,7 @@ main{
 
 .inputs{
     display:flex;
-    gap:10%
+    gap:5%
 }
 
 .caixa{
@@ -43,14 +44,47 @@ main{
 }
 
 input[type=number]{
-    width: 3.5rem;
+    width: 6rem;
     padding:5px;
+    font-size: 2rem;
 }
 
 /* Botao Action */
 
 .botao-container{
-    width: 100%;
+    display:flex;
+    align-items: center;
 }
+
+.botao-container hr{
+    width: calc(100% - 45px);
+}
+
+
+.imagem{
+    background-color:hsl(259, 100%, 65%);
+    width: 45px;
+    height: 45px;
+    padding:5px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+}
+
+/* Result*/
+
+.resultado em{
+    font-size: 2.625rem;
+    font-weight: 800;
+
+}
+
+.resultado span{
+    color: hsl(259, 100%, 65%);
+}
+
+
 
 
