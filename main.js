@@ -10,17 +10,24 @@ let $lbAno = document.getElementById('ano')
 
 let $btn = document.getElementById('btn-calc')
 
+$btn.accessKey = "v"
+
 $btn.addEventListener("click",(evt)=>{
-    print($txtDia.value)
-    print($txtMes.value)
-    print($txtAno.value)
-    /*if(validar($txtDia.value, $txtMes.value,$txtAno.value)){
+
+    let dia = $txtDia.value
+    let mes = $txtMes.value
+    let ano = $txtAno.value
+    console.log(validar(dia,mes,ano))
+    if(validar($txtDia.value, $txtMes.value,$txtAno.value)){
         alert("Passou")
+        let idade = (new Date().getFullYear() - ano).toString()
+        let mesesIdade = (new Date().getMonth() - mes).toString()
+        $lbAno.innerHTML = idade
+        $lbMes.innerHTML = mesesIdade
     }else{
         alert("Nao passou")
-    }*/
+    }
 })
-
 
 
 
@@ -40,4 +47,4 @@ function validar(dia, mes, ano){
 
 let isLeapYear = ano => (ano%4==0 && ano%100!=0) || ano %400==0
 
-var print = v = console.log(v)
+var log = v = console.log(v)
