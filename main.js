@@ -1,20 +1,27 @@
 //TextBoxes
-let $txtDia = document.getElementById('#txtDia').value
-let $txtMes = document.getElementById('#txtMes').value
-let $txtAno = document.getElementById('#txtAno').value
+let $txtMes = document.getElementById('txtMes')
+let $txtDia = document.getElementById('txtDia')
+let $txtAno = document.getElementById('txtAno')
 //Labels
-let $lbDia = document.getElementById('#dia')
-let $lbMes = document.getElementById('#mes')
-let $lbAno = document.getElementById('#ano')
+let $lbDia = document.getElementById('dia')
+let $lbMes = document.getElementById('mes')
+let $lbAno = document.getElementById('ano')
 //Button
 
 let $btn = document.getElementById('btn-calc')
 
-$btn.addEventListener((evt)=>{
-    if($txtAno.checkValidity()){
-        alert('ola')
-    }
+$btn.addEventListener("click",(evt)=>{
+    print($txtDia.value)
+    print($txtMes.value)
+    print($txtAno.value)
+    /*if(validar($txtDia.value, $txtMes.value,$txtAno.value)){
+        alert("Passou")
+    }else{
+        alert("Nao passou")
+    }*/
 })
+
+
 
 
 
@@ -32,3 +39,5 @@ function validar(dia, mes, ano){
 }
 
 let isLeapYear = ano => (ano%4==0 && ano%100!=0) || ano %400==0
+
+var print = v = console.log(v)
